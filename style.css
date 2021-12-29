@@ -7,7 +7,7 @@
 .rodape-novo {
   background-color: #000;
   color: #fff;
-  padding: 20px;
+  padding: 10px;
 }
 
 .rodape-container {
@@ -18,10 +18,10 @@
   justify-content: center;
 }
 
-.forma-pagto img{
+/* .forma-pagto img{
   content: url('Tarja_Black_Rodapé-PECUÁRIAMG.png');
   max-width: 1140px;
-}
+} */
 
 .titulo {
   font-size: 20px;
@@ -70,7 +70,7 @@
 
 .rodape-novo p {
   font-size: 16px;
-  margin: 0 0 10px;
+  margin: 10px 0;
 }
 
 .rodape-novo a {
@@ -111,11 +111,11 @@
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-  .forma-pagto img{
+@media screen and (max-width: 770px) {
+  /* .forma-pagto img{
     content: url('Tarja_Black_Rodapé_MOBILE_PECUÁRIAMG.png');
-    max-width: 1140px;
-  }
+    max-width: 600px;
+  } */
 
   .sobre-loja-rodape p {
     text-align: center;
@@ -127,6 +127,7 @@
 
   .rodape-container {
     align-items: center;
+    overflow: hidden;
   }
 
   .box {
@@ -145,6 +146,7 @@
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
   }
 
   .rede-social ul{
@@ -153,8 +155,6 @@
   }
 
   .pagto-selos {
-    /* display: grid;
-    grid-template-columns: 1fr; */
     flex-direction: column;
     gap: 20px;
     margin-top: 40px;
@@ -172,7 +172,10 @@
     width: 200px;
   }
 
-  .rodape-copy {
-    max-width: 100%;
+  .rodape-copy p {
+    color: #555;
+    font-size: 15px;
+    text-align: center;
+    overflow: hidden;
   }
 }
