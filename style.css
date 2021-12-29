@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.rodape-novo {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+.rodape-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.forma-pagto img{
+  content: url('Tarja_Black_Rodapé-PECUÁRIAMG.png');
+  max-width: 1140px;
+}
+
+.titulo {
+  font-size: 20px;
+}
+
+.pagto-selos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+
+.pagamento, .selo {
+  width: 50%;
+}
+
+.gateways-rodape, .selo ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.rodape-container ul {
+  list-style-type: none;
+}
+
+.rodape-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-rodape a img {
+  margin: auto;
+  max-width: 200px;
+}
+
+.box {
+  max-width: 290px;
+}
+
+.box ul {
+  padding: 25px 0;
+}
+
+.rodape-novo p {
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+
+.rodape-novo a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.rodape-novo a:hover {
+  color: #555;
+}
+
+.rede-social {
+  align-self: flex-start;
+}
+
+.rede-social ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  font-size: 20px;
+}
+
+.rodape-copy {
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  font-size: 11px;
+}
+
+.rodape-copy p {
+  color: #555;
+  font-size: 11px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .forma-pagto img{
+    content: url('Tarja_Black_Rodapé_MOBILE_PECUÁRIAMG.png');
+    max-width: 1140px;
+  }
+
+  .sobre-loja-rodape p {
+    text-align: center;
+  }
+
+  .rodape-contato ul, .rodape-conteudo ul, .logo-rodape {
+    text-align: center;
+  }
+
+  .rodape-container {
+    align-items: center;
+  }
+
+  .box {
+    max-width: 400px;
+    margin-top: 20px;
+  }
+  
+  .titulo {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+  }
+
+  .rodape-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rede-social ul{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .pagto-selos {
+    /* display: grid;
+    grid-template-columns: 1fr; */
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .pagto-selos .titulo {
+    margin-bottom: 10px;
+  }
+
+  .pagto-selos img {
+    margin-bottom: 10px;
+  }
+  
+  .logo-rodape a img {
+    width: 200px;
+  }
+
+  .rodape-copy {
+    max-width: 100%;
+  }
+}
