@@ -18,10 +18,9 @@
   justify-content: center;
 }
 
-/* .forma-pagto img{
-  content: url('Tarja_Black_Rodapé-PECUÁRIAMG.png');
+.forma-pagto img {
   max-width: 1140px;
-} */
+}
 
 .titulo {
   font-size: 20px;
@@ -112,10 +111,9 @@
 }
 
 @media screen and (max-width: 770px) {
-  /* .forma-pagto img{
-    content: url('Tarja_Black_Rodapé_MOBILE_PECUÁRIAMG.png');
+  .forma-pagto img {
     max-width: 600px;
-  } */
+  }
 
   .sobre-loja-rodape p {
     text-align: center;
@@ -146,7 +144,6 @@
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
   }
 
   .rede-social ul{
@@ -176,6 +173,5 @@
     color: #555;
     font-size: 15px;
     text-align: center;
-    overflow: hidden;
   }
 }
