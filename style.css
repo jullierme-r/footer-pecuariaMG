@@ -1,13 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.bg-laranja {
+  background-color: #ffa000;
+}
+
+.colorOrange {
+  color: #ffa000;
+}
+
+.upper {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+.forma-pagto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.caixa-pagto {
+  text-align: center;
+  height: 195px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-black {
+  color: #000;
+  font-weight:bold;
+}
+
+.caixa-pagto i {
+  font-size: 35px;
+}
+
+.card-img {
+  width: 70px;
+}
+
 .rodape-novo {
   background-color: #000;
   color: #fff;
-  padding: 10px;
+  font-family: 'Open Sans', serif; 
+  letter-spacing: 0.8px;
 }
 
 .rodape-container {
@@ -18,10 +65,6 @@
   justify-content: center;
 }
 
-.forma-pagto img {
-  max-width: 1140px;
-}
-
 .titulo {
   font-size: 20px;
 }
@@ -30,7 +73,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 20px;
+  margin: 20px 0px;
 }
 
 .pagamento, .selo {
@@ -41,6 +84,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 20px;
 }
 
 .rodape-container ul {
@@ -52,6 +96,11 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  margin: 15px 0;
+}
+
+.rodape-conteudo {
+  align-self: flex-start;
 }
 
 .logo-rodape a img {
@@ -64,7 +113,7 @@
 }
 
 .box ul {
-  padding: 25px 0;
+  padding: 10px 0;
 }
 
 .rodape-novo p {
@@ -87,10 +136,8 @@
 }
 
 .rede-social ul{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  justify-content: center;
+  display: flex;
+  gap: 15px;
   align-items: center;
 }
 
@@ -110,16 +157,16 @@
   text-align: center;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 780px) {
+  .caixa-pagto {
+    width: 720px;
+  }
+
   .forma-pagto img {
     max-width: 600px;
   }
 
   .sobre-loja-rodape p {
-    text-align: center;
-  }
-
-  .rodape-contato ul, .rodape-conteudo ul, .logo-rodape {
     text-align: center;
   }
 
@@ -130,12 +177,15 @@
 
   .box {
     max-width: 400px;
-    margin-top: 20px;
+    margin-top: 15px;
+  }
+
+  .box ul {
+    padding: 0;
   }
   
   .titulo {
     display: flex;
-    justify-content: center;
     font-size: 25px;
   }
 
@@ -148,7 +198,8 @@
 
   .rede-social ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    gap: 20px;
   }
 
   .pagto-selos {
