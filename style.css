@@ -17,6 +17,7 @@
 .upper {
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
+  font-weight: bold;
   font-size: 25px;
   margin-top: 5px;
 }
@@ -29,7 +30,7 @@
 
 .caixa-pagto {
   text-align: center;
-  height: 195px;
+  height: 180px;
   width: 300px;
   display: flex;
   flex-direction: column;
@@ -43,7 +44,7 @@
 }
 
 .caixa-pagto i {
-  font-size: 35px;
+  font-size: 25px;
 }
 
 .card-img {
@@ -160,6 +161,8 @@
 @media screen and (max-width: 780px) {
   .caixa-pagto {
     width: 720px;
+    height: 120px;
+    line-height: 1;
   }
 
   .forma-pagto img {
